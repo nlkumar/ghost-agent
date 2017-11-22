@@ -1,0 +1,22 @@
+build/
+.settings/
+.gradle/
+logs/
+incoming/
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+
+.DS_Store
+project.properties
+classes/
+target/
+bin/

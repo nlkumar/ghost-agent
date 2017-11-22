@@ -1,0 +1,25 @@
+apply plugin: 'java'
+
+rootProject.version = '0.1'
+
+repositories {
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+}
+
+jar {
+	archiveName = "${rootProject.name}_agent-${rootProject.version}.jar"
+	manifest {
+	  attributes(
+		'Premain-Class': 'com.ghost.lib.Agent',
+		'Can-Redefine-Classes': 'true',
+		'Can-Retransform-Classes': 'true',
+		'Can-Set-Native-Method-Prefix': 'true',
+		'Implementation-Title': "ClassLogger",
+		'Implementation-Version': rootProject.version
+	  )	
+	}
+}

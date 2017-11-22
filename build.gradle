@@ -11,7 +11,7 @@ dependencies {
 }
 
 jar {
-	archiveName = "${rootProject.name}_agent-${rootProject.version}.jar"
+	archiveName = "${rootProject.name}-${rootProject.version}.jar"
 	manifest {
 	  attributes(
 		'Premain-Class': 'com.ghost.lib.Agent',
